@@ -1,0 +1,11 @@
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\bin\Debug\netcoreapp2.1\CallResponseOpgave.deps.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\bin\Debug\netcoreapp2.1\CallResponseOpgave.runtimeconfig.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\bin\Debug\netcoreapp2.1\CallResponseOpgave.runtimeconfig.dev.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\bin\Debug\netcoreapp2.1\CallResponseOpgave.dll
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\bin\Debug\netcoreapp2.1\CallResponseOpgave.pdb
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\obj\Debug\netcoreapp2.1\CallResponseOpgave.csprojAssemblyReference.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\obj\Debug\netcoreapp2.1\CallResponseOpgave.csproj.CoreCompileInputs.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\obj\Debug\netcoreapp2.1\CallResponseOpgave.AssemblyInfoInputs.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\obj\Debug\netcoreapp2.1\CallResponseOpgave.AssemblyInfo.cs
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\obj\Debug\netcoreapp2.1\CallResponseOpgave.dll
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\CallResponseOpgave\CallResponseOpgave\obj\Debug\netcoreapp2.1\CallResponseOpgave.pdb
