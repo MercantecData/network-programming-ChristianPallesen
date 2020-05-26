@@ -11,26 +11,34 @@ namespace CallResponseOpgave
         {
             bool isActive = true;
 
-            while (isActive)
+            while (isActive) 
             {
             gohere:
-                TcpClient client = new TcpClient();
+
+                //Gets data from user
                 Console.WriteLine("Skriv ip'en du vil connecte til: ");
                 string ipFromUser = Console.ReadLine();
                 Console.WriteLine("Skriv hvilken port du vil connecte til: ");
                 int port = Convert.ToInt32(Console.ReadLine());
+
+                //Declarations
                 IPAddress ip = IPAddress.Parse(ipFromUser);
                 IPEndPoint endPoint = new IPEndPoint(ip, port);
+                TcpClient client = new TcpClient();
 
-                client.Connect(endPoint);
+                //Connects to server
+                NetworkStream stream = ConnectToServer(endPoint, client);
                 gohere2:
+
+                //Gets the message from user
                 Console.WriteLine("Du er connected til server pc'en. Skriv din tekst: ");
                 string text = Console.ReadLine();
-                NetworkStream stream = client.GetStream();
-                byte[] buffer = Encoding.UTF8.GetBytes(text);
-                stream.Write(buffer, 0, buffer.Length);
 
-                Console.WriteLine("Din besked er sendt, hvis du vil sende en mere skriv LAST, ellers skrev NEW for at skrive til en ny person.");
+                //Sends message to the server
+                SendMessageToStream(text, stream);
+
+                //Checks if the user wants to use the last endPoint or connect to a new one
+                Console.WriteLine("Din besked er sendt! Hvis du vil sende en mere skriv LAST, ellers skrev NEW for at skrive til en ny person.");
                 string inputFromUser = Console.ReadLine();
                 if (inputFromUser == "LAST")
                 {
@@ -38,18 +46,29 @@ namespace CallResponseOpgave
 
                 } else if (inputFromUser == "NEW")
                 {
-
                     string text1 = "NEW";
                     NetworkStream stream1 = client.GetStream();
-                    byte[] buffer1 = Encoding.UTF8.GetBytes(text1);
-                    stream.Write(buffer1, 0, buffer1.Length);
-
+                    SendMessageToStream(text1, stream1);
                     goto gohere;
                 }
-                //client.Close();
+                
             }
 
       
         }
+
+        public static void SendMessageToStream(string text, NetworkStream stream)
+        {
+            byte[] bytes = Encoding.UTF8.GetBytes(text);
+            stream.Write(bytes, 0, bytes.Length);
+        }
+
+        public static NetworkStream ConnectToServer(IPEndPoint endPoint, TcpClient client)
+        {
+            client.Connect(endPoint);
+            NetworkStream stream = client.GetStream();
+            return stream;
+        }
+
     }
 }
