@@ -9,9 +9,9 @@ namespace CallResponseOpgave
     {
         static void Main(string[] args)
         {
-            bool isActive;
+            bool isActive = true;
 
-            while (isActive = true)
+            while (isActive)
             {
                 gohere:
                 TcpClient client = new TcpClient();
@@ -30,7 +30,7 @@ namespace CallResponseOpgave
                 byte[] buffer = Encoding.UTF8.GetBytes(text);
                 stream.Write(buffer, 0, buffer.Length);
 
-                Console.WriteLine("Din besked er sendt, hvis du vil sende en mere skriv LAST, ellers skrev NEW for at skrive til en ny person.");
+                Console.WriteLine("Din besked er sendt, hvis du vil sende en mere skriv LAST, ellers skrev NEW for at skrive til en ny person. Du kan også skrive EXIT for at lukke programmet.");
                 string inputFromUser = Console.ReadLine();
                 if (inputFromUser == "LAST")
                 {
@@ -39,8 +39,12 @@ namespace CallResponseOpgave
                 } else if (inputFromUser == "NEW")
                 {
                     goto gohere;
+                } else if (inputFromUser == "EXIT")
+                {
+                    //client.Close();
+                    isActive = false;
                 }
-                //client.Close();
+                
             }
 
       
