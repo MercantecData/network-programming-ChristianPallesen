@@ -13,7 +13,7 @@ namespace CallResponseOpgave
 
             while (isActive)
             {
-                gohere:
+            gohere:
                 TcpClient client = new TcpClient();
                 Console.WriteLine("Skriv ip'en du vil connecte til: ");
                 string ipFromUser = Console.ReadLine();
@@ -30,7 +30,7 @@ namespace CallResponseOpgave
                 byte[] buffer = Encoding.UTF8.GetBytes(text);
                 stream.Write(buffer, 0, buffer.Length);
 
-                Console.WriteLine("Din besked er sendt, hvis du vil sende en mere skriv LAST, ellers skrev NEW for at skrive til en ny person. Du kan også skrive EXIT for at lukke programmet.");
+                Console.WriteLine("Din besked er sendt, hvis du vil sende en mere skriv LAST, ellers skrev NEW for at skrive til en ny person.");
                 string inputFromUser = Console.ReadLine();
                 if (inputFromUser == "LAST")
                 {
@@ -38,13 +38,15 @@ namespace CallResponseOpgave
 
                 } else if (inputFromUser == "NEW")
                 {
+
+                    string text1 = "NEW";
+                    NetworkStream stream1 = client.GetStream();
+                    byte[] buffer1 = Encoding.UTF8.GetBytes(text1);
+                    stream.Write(buffer1, 0, buffer1.Length);
+
                     goto gohere;
-                } else if (inputFromUser == "EXIT")
-                {
-                    //client.Close();
-                    isActive = false;
                 }
-                
+                //client.Close();
             }
 
       
