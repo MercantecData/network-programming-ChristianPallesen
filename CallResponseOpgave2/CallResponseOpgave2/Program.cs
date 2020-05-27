@@ -23,7 +23,6 @@ namespace CallResponseOpgave2
             NetworkStream stream = client.GetStream();
             Console.WriteLine("Du er connected med en client, vent på modtagelse af besked.");
 
-
             byte[] buffer = new byte[255];
 
             while (true)

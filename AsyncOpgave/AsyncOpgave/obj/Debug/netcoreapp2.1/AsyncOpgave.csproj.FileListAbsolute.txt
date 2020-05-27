@@ -1,0 +1,11 @@
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\bin\Debug\netcoreapp2.1\AsyncOpgave.deps.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\bin\Debug\netcoreapp2.1\AsyncOpgave.runtimeconfig.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\bin\Debug\netcoreapp2.1\AsyncOpgave.runtimeconfig.dev.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\bin\Debug\netcoreapp2.1\AsyncOpgave.dll
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\bin\Debug\netcoreapp2.1\AsyncOpgave.pdb
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\obj\Debug\netcoreapp2.1\AsyncOpgave.csprojAssemblyReference.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\obj\Debug\netcoreapp2.1\AsyncOpgave.csproj.CoreCompileInputs.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\obj\Debug\netcoreapp2.1\AsyncOpgave.AssemblyInfoInputs.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\obj\Debug\netcoreapp2.1\AsyncOpgave.AssemblyInfo.cs
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\obj\Debug\netcoreapp2.1\AsyncOpgave.dll
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\AsyncOpgave\AsyncOpgave\obj\Debug\netcoreapp2.1\AsyncOpgave.pdb
