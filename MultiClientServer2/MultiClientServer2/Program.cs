@@ -8,18 +8,22 @@ namespace MultiClientServer2
 {
     class Program
     {
+        //List of all the connected clients
         public static List<TcpClient> clients = new List<TcpClient>();
 
 
         public static void Main(string[] args)
         {
+            //Declarations
             IPAddress ip = IPAddress.Parse("127.0.0.1");
             int port = 480;
             TcpListener listener = new TcpListener(ip, port);
-            listener.Start();
 
+            //Starts listening for clients and accepts them
+            listener.Start();
             AcceptClients(listener);
 
+            //Allows for the server to write to all connected clients
             bool isRunning = true;
             while (isRunning)
             {
@@ -34,6 +38,7 @@ namespace MultiClientServer2
             }
         }
  
+        //Function that accepts clients and reads their messages
         public static async void AcceptClients(TcpListener listener)
         {
             bool isRunning = true;
@@ -45,7 +50,7 @@ namespace MultiClientServer2
                 ReceiveMessage(stream);
             }
         }
-
+        //Function to allow server to read clients message
         public static async void ReceiveMessage(NetworkStream stream)
         {
             byte[] buffer = new byte[255];
