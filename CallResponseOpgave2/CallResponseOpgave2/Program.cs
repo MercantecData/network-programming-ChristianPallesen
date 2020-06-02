@@ -9,7 +9,11 @@ namespace CallResponseOpgave2
     {
         static void Main(string[] args)
         {
-            gohere:
+        gohere:
+
+            Random random = new Random();
+
+            int returnValue = random.Next(0, 100);
 
             //Declarations
             int port = 480;
@@ -30,14 +34,17 @@ namespace CallResponseOpgave2
                 //Prints the message recieved from the Client after it has been encoded using UTF8
                 int numberOfBytesRead = stream.Read(buffer, 0, 255);
                 string message = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
-                if (message != "NEW")
+
+                int messageFromUser = Convert.ToInt32(message);
+                if (messageFromUser < returnValue)
                 {
-                    Console.WriteLine(message);
+                    Console.WriteLine("Du gættede forkert, tallet er højere end: " + messageFromUser);
+                } else if (messageFromUser > returnValue)
+                {
+                    Console.WriteLine("Du gættede forkert, tallet er mindre end: " + messageFromUser);                    
                 } else
                 {
-                    Console.WriteLine("Din tilknyttede client er disconnected.");
-                    DisconnectFromClient(client, listener);
-                    goto gohere;
+                    Console.WriteLine("Du gættede rigtig, tallet var: " + returnValue);
                 }
 
             }

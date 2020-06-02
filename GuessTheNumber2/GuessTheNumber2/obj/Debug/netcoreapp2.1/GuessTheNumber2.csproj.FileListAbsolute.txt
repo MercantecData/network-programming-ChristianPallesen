@@ -1,0 +1,11 @@
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\bin\Debug\netcoreapp2.1\GuessTheNumber2.deps.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\bin\Debug\netcoreapp2.1\GuessTheNumber2.runtimeconfig.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\bin\Debug\netcoreapp2.1\GuessTheNumber2.runtimeconfig.dev.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\bin\Debug\netcoreapp2.1\GuessTheNumber2.dll
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\bin\Debug\netcoreapp2.1\GuessTheNumber2.pdb
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\obj\Debug\netcoreapp2.1\GuessTheNumber2.csprojAssemblyReference.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\obj\Debug\netcoreapp2.1\GuessTheNumber2.csproj.CoreCompileInputs.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\obj\Debug\netcoreapp2.1\GuessTheNumber2.AssemblyInfoInputs.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\obj\Debug\netcoreapp2.1\GuessTheNumber2.AssemblyInfo.cs
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\obj\Debug\netcoreapp2.1\GuessTheNumber2.dll
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\GuessTheNumber2\GuessTheNumber2\obj\Debug\netcoreapp2.1\GuessTheNumber2.pdb
