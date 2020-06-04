@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Christian P\\Desktop\\Netværks Programmering\\network-programming-ChristianPallesen\\UDPproject\\UDPproject\\UDPproject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Christian P\\Desktop\\Netværks Programmering\\network-programming-ChristianPallesen\\UDPproject\\UDPproject\\UDPproject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Christian P\\Desktop\\Netværks Programmering\\network-programming-ChristianPallesen\\UDPproject\\UDPproject\\UDPproject.csproj",
+        "projectName": "UDPproject",
+        "projectPath": "C:\\Users\\Christian P\\Desktop\\Netværks Programmering\\network-programming-ChristianPallesen\\UDPproject\\UDPproject\\UDPproject.csproj",
+        "packagesPath": "C:\\Users\\Christian P\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Christian P\\Desktop\\Netværks Programmering\\network-programming-ChristianPallesen\\UDPproject\\UDPproject\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Christian P\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

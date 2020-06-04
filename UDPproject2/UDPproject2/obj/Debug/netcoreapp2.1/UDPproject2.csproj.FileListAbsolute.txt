@@ -1,0 +1,11 @@
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\bin\Debug\netcoreapp2.1\UDPproject2.deps.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\bin\Debug\netcoreapp2.1\UDPproject2.runtimeconfig.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\bin\Debug\netcoreapp2.1\UDPproject2.runtimeconfig.dev.json
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\bin\Debug\netcoreapp2.1\UDPproject2.dll
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\bin\Debug\netcoreapp2.1\UDPproject2.pdb
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\obj\Debug\netcoreapp2.1\UDPproject2.csprojAssemblyReference.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\obj\Debug\netcoreapp2.1\UDPproject2.csproj.CoreCompileInputs.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\obj\Debug\netcoreapp2.1\UDPproject2.AssemblyInfoInputs.cache
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\obj\Debug\netcoreapp2.1\UDPproject2.AssemblyInfo.cs
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\obj\Debug\netcoreapp2.1\UDPproject2.dll
+C:\Users\Christian P\Desktop\Netværks Programmering\network-programming-ChristianPallesen\UDPproject2\UDPproject2\obj\Debug\netcoreapp2.1\UDPproject2.pdb

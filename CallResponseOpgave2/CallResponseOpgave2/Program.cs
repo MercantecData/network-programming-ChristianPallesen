@@ -9,52 +9,36 @@ namespace CallResponseOpgave2
     {
         static void Main(string[] args)
         {
-        gohere:
-
-            Random random = new Random();
-
-            int returnValue = random.Next(0, 100);
-
-            //Declarations
+            //SERVER
             int port = 480;
             IPAddress ip = IPAddress.Any;
             IPEndPoint localEndpoint = new IPEndPoint(ip, port);
+
             TcpListener listener = new TcpListener(localEndpoint);
 
-            //Starts the listener and waits for a connection. If one is pending it gets accepted, using Tcp.
             listener.Start();
+
+            Console.WriteLine("Venter på klienter");
             TcpClient client = listener.AcceptTcpClient();
+
             NetworkStream stream = client.GetStream();
-            Console.WriteLine("Du er connected med en client, vent på modtagelse af besked.");
+            ReceiveMessage(stream);
 
-            byte[] buffer = new byte[255];
-
-            while (true)
-            {
-                //Prints the message recieved from the Client after it has been encoded using UTF8
-                int numberOfBytesRead = stream.Read(buffer, 0, 255);
-                string message = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
-
-                int messageFromUser = Convert.ToInt32(message);
-                if (messageFromUser < returnValue)
-                {
-                    Console.WriteLine("Du gættede forkert, tallet er højere end: " + messageFromUser);
-                } else if (messageFromUser > returnValue)
-                {
-                    Console.WriteLine("Du gættede forkert, tallet er mindre end: " + messageFromUser);                    
-                } else
-                {
-                    Console.WriteLine("Du gættede rigtig, tallet var: " + returnValue);
-                }
-
-            }
+            Console.ReadKey();
 
         }
-        static void DisconnectFromClient(TcpClient client, TcpListener listener)
-        {
 
-            client.Close();
-            listener.Stop();
+        public static void ReceiveMessage(NetworkStream stream)
+        {
+            byte[] buffer = new byte[255];
+            while (true)
+            {
+                int numberOfBytesRead = stream.Read(buffer, 0, 255);
+                string receivedMessage = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
+
+                Console.WriteLine("\n" + receivedMessage);
+            }
+
         }
     }
 }

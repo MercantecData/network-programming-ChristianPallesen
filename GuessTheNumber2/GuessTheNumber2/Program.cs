@@ -44,11 +44,24 @@ namespace GuessTheNumber2
         public static async void ReceiveMessage(NetworkStream stream)
         {
             gohere:
-            byte[] buffer = new byte[255];
+            byte[] buffer = new byte[255];      
+
+            string text4 = "Velkommen til gæt tallet. \nFørst skal du skrive de 2 tal som du gerne vil finde et tal imellem. \nDerefter skal du skrive et tal, så vil jeg hjælpe dig med at fortælle dig \nom det tal som du leder efter er større eller mindre.";
+            byte[] buffer4 = Encoding.UTF8.GetBytes(text4);
+            stream.Write(buffer4, 0, buffer4.Length);
+
+            int numberOfBytesRead1 = await stream.ReadAsync(buffer, 0, 255);
+            string receivedMessage1 = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead1);
+
+            int numberOfBytesRead2 = await stream.ReadAsync(buffer, 0, 255);
+            string receivedMessage2 = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead2);
 
             Random random = new Random();
+            int returnValue = random.Next(Convert.ToInt32(receivedMessage1), Convert.ToInt32(receivedMessage2));
 
-            int returnValue = random.Next(0, 100);
+            string text5 = "Der er nu blevet genereret et tal fra " + receivedMessage1 + " til og med " + receivedMessage2 + ". Held og lykke";
+            byte[] buffer5 = Encoding.UTF8.GetBytes(text5);
+            stream.Write(buffer5, 0, buffer5.Length);
 
             while (true)
             {
@@ -77,7 +90,7 @@ namespace GuessTheNumber2
                 } else if (StringToInt == returnValue)
                 {
                     Console.WriteLine("Du gættede rigtig, tallet er: " + returnValue);
-                    string text = "Du gættede rigtig, tallet er: " + returnValue + ". Der er kommet et nyt nummer som du skal gætte.";
+                    string text = "Du gættede rigtig, tallet er: " + returnValue;
                     byte[] buffer1 = Encoding.UTF8.GetBytes(text);
                     stream.Write(buffer1, 0, buffer1.Length);
                     goto gohere;
