@@ -33,11 +33,6 @@ namespace GuessTheNumber2
                 stream.Write(buffer, 0, buffer.Length);
 
             }
-            Console.ReadKey();
-
-
-
-
 
         }
 
@@ -81,7 +76,6 @@ namespace GuessTheNumber2
                 goto gohere3;
             }
 
-
             Random random = new Random();
             int returnValue = random.Next(Convert.ToInt32(receivedMessage1), Convert.ToInt32(receivedMessage2));
             if (receivedMessage1 == receivedMessage2)
@@ -116,9 +110,7 @@ namespace GuessTheNumber2
                     byte[] buffer1 = Encoding.UTF8.GetBytes(text);
                     stream.Write(buffer1, 0, buffer1.Length);
                     goto gohere4;
-                }
-
-                
+                }       
 
                 if (i3 < returnValue)
                 {
